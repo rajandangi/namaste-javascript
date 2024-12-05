@@ -21,3 +21,14 @@ x();// function bundled with its lexical scope is called closure.
  * 7. Iterators
  * and many more...
  */
+
+
+function outer() {
+    var a = 10;
+    function inner() {
+        console.log(a);
+    }
+    return inner;
+}
+outer()(); // This is called closure. inner function bundled with its lexical scope.
+// ()() this calls the inner function. outer() returns inner function and then () calls the inner function.
