@@ -2,7 +2,7 @@
 function x() {
     var a = 7;
     function y() {
-        console.log(a);
+        console.log(a); // Although a is not available in the scope of y, it is available because of closure.
     }
     return y;
 }
