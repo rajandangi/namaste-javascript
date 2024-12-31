@@ -12,15 +12,20 @@ const diameter = function (radius) {
     return 2 * radius;
 }
 
-const calculate = function (radius, fn) {
+Array.prototype.calculate = function (fn) {
     const output = [];
-    for (let i = 0; i < radius.length; i++) {
-        output.push(fn(radius[i]));
+    for (let i = 0; i < this.length; i++) {
+        output.push(fn(this[i]));
     }
 
     return output;
 }
 
-console.log(calculate(radius, area));
-console.log(calculate(radius, circumference));
-console.log(calculate(radius, diameter));
+console.log(radius.map(area));
+console.log(radius.calculate(area));
+console.log(radius.calculate(circumference));
+console.log(radius.calculate(diameter));
+
+/**
+ * A function which takes another function as an argument, or returns a function as a result is called a higher order function.
+ */
