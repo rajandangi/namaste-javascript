@@ -12,6 +12,7 @@ const diameter = function (radius) {
     return 2 * radius;
 }
 
+// Own implementation of map function
 Array.prototype.calculate = function (fn) {
     const output = [];
     for (let i = 0; i < this.length; i++) {
