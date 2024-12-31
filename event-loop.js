@@ -24,13 +24,13 @@ console.log('While loop ended');
  * https://www.youtube.com/watch?v=nqsPmuicJJc&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP&index=20
  *
  */
-console.log('Start');
+console.log('Start-again');
 
 setTimeout(() => {
-    console.log('callback');
+    console.log('callback-again');
 }, 0);
 
-console.log('End');
+console.log('End-again');
 
 /**
  * Output:
