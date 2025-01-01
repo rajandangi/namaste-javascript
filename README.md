@@ -25,9 +25,11 @@ Which ever promise is settled first, that promise will be returned. If the first
 ![alt text](image-6.png)
 
 4. `Promise.any` :
-It will wait for the first promise to be settled. If the first promise is resolved, then the resolved value will be returned and the rest of the promises will be ignored. If the first promise is rejected, then it will wait for the next promise to be settled. If all the promises are rejected, then it will throw an error.
+If the first promise is resolved, then the resolved value will be returned and the rest of the promises will be ignored. If the first promise is rejected, then it will wait for the next promise to be settled. If all the promises are rejected, then it will throw an error.
 
-    > It's a success seeking race.
+    - > It's a success seeking race.
+    - > fulfills when any of the input's promises fulfills, with this first fulfillment value.
+    - > It rejects when all of the input's promises reject (including when an empty iterable is passed)
 
 ![alt text](image-7.png)
 
