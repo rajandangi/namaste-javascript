@@ -1,6 +1,9 @@
 ### Promise: Static Methods
  > Note: Some of the images have p1,p1,p3 but it should be p1,p2,p3. So please ignore the typo.
- 
+
+The term **Settled** means either resolved or rejected.
+![alt text](image-1.png)
+
 #### 1. `Promise.all` :
 It will wait for all the promises to be settled. If all the promises are resolved, then the resolved values will be returned in an array. If any of the promises is rejected, then the rejected value will be returned and the rest of the promises will be ignored.
 
