@@ -1,3 +1,5 @@
+# Time, tide and JavaScript wait for none
+
 ### Promise: Static Methods
  > Note: Some of the images have p1,p1,p3 but it should be p1,p2,p3. So please ignore the typo.
 
@@ -24,7 +26,7 @@ Which ever promise is settled first, that promise will be returned. If the first
 
 ![alt text](image-6.png)
 
-4. `Promise.any` :
+#### 4. `Promise.any` :
 If the first promise is resolved, then the resolved value will be returned and the rest of the promises will be ignored. If the first promise is rejected, then it will wait for the next promise to be settled. If all the promises are rejected, then it will throw an error.
 
     - > It's a success seeking race.
@@ -36,3 +38,15 @@ If the first promise is resolved, then the resolved value will be returned and t
 ![alt text](image-5.png)
 
 ![alt text](image-8.png)
+
+
+### Async/Await
+- `async` function always returns a promise.
+- `await` keyword is used to wait for a promise to be settled.
+- `await` keyword can only be used inside an `async` function.
+- As soon as the `await` keyword is encountered, the control is transferred to the caller function. Once the promise is settled, the control is transferred back to the `async` function. This means async function pops out of the call stack and the control is transferred to the caller function. Once the promise is settled, the async function is pushed back to the call stack. This is the reason why the async function is non-blocking.
+- `try` and `catch` should be used for error handling.
+
+### Async await vs Promise.then/.catch
+- `async/await` is just a syntactic sugar over `Promise.then/.catch`.
+- `async/await` is more readable and easy to understand.
