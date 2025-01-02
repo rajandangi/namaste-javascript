@@ -24,9 +24,9 @@
         }
 
         .bc {
-            max-width: 100px;
-            max-height: 100px;
-            padding: 1rem;
+            max-width: 200px;
+            max-height: 200px;
+            padding: 20px;
             border: 1px solid black;
         }
     </style>
@@ -41,8 +41,12 @@
     </div>
     <section>
         <div id="grandparent" class="bc">
+            grandparent
             <div id="parent" class="bc">
-                <div id="child" class="bc"></div>
+                parent
+                <div id="child" class="bc">
+                    child
+                </div>
             </div>
         </div>
     </section>
