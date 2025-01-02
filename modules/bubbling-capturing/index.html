@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling, Capturing aka Trickling in Javascript</title>
+    <style>
+        #grandparent {
+            background-color: lightcoral;
+        }
+
+        #parent {
+            background-color: lightblue;
+        }
+
+        #child {
+            background-color: lightgreen;
+        }
+
+        section {
+            display: grid;
+            place-items: center;
+        }
+
+        .bc {
+            max-width: 100px;
+            max-height: 100px;
+            padding: 1rem;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Event Bubbling, Capturing aka Trickling in Javascript</h1>
+    <div class="item-container">
+        <div class="item">
+            <a href="../../index.html">Home</a>
+        </div>
+    </div>
+    <section>
+        <div id="grandparent" class="bc">
+            <div id="parent" class="bc">
+                <div id="child" class="bc"></div>
+            </div>
+        </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+
+</html>
