@@ -5,12 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .item-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .item {
+            padding: 1rem;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .item a {
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
 </head>
 
 <body>
     <h1>Namaste Javascript</h1>
-    <button id="btn-one">Click Me</button>
-    <button id="btn-two">Click Me-2</button>
+    <div class="item-container">
+        <div class="item">
+            <a href="modules/currying/index.html">Currying in Javascript</a>
+        </div>
+        <div class="item">
+            <button id="btn-one">Click Me</button>
+        </div>
+        <div class="item">
+            <button id="btn-two">Click Me-2</button>
+        </div>
+    </div>
 </body>
 
 <!-- <script src="./shadowing.js"></script> -->

@@ -38,3 +38,4 @@ const fullNameBind = fullName.bind(name);
 fullNameBind(); // Rajan Dangi
 const fullNameBind2 = fullName.bind(name2);
 fullNameBind2(); // Bhawana Dangi
+
