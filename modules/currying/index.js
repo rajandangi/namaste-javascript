@@ -28,3 +28,9 @@ let sum = function (a) {
 }
 let addTwo = sum(2);
 addTwo(3); // 5
+
+/**
+ * Function curring cab be achieved using two ways:
+ * 1. Using bind method
+ * 2. Using closure
+ */
