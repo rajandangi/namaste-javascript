@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debouncing & Throttling in Javascript</title>
+    <style>
+        .input-wrapper {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .input-wrapper input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Debouncing & Throttling in Javascript</h1>
+    <div class="item-container">
+        <div class="item">
+            <a href="../../index.html">Home</a>
+        </div>
+    </div>
+    <section style="display: grid; gap: 1rem; place-items:center;">
+        <div class="input-wrapper">
+            <input type="text" id="search" placeholder="Type here and see console to see debounce">
+        </div>
+        <div class="input-wrapper">
+            <input type="text" id="search2" placeholder="Type here and see console to see Throttling">
+        </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+
+</html>
