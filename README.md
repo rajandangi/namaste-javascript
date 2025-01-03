@@ -53,3 +53,23 @@ If the first promise is resolved, then the resolved value will be returned and t
 
 ### Async vs Defer in script tag
 ![alt text](images/image-10.png)
+
+
+### How get `sum(1)(2)(3)(4)...(n)` ?
+```javascript
+let sum = a => b => typeof (b) === 'undefined' ? a : sum(a + b);
+
+console.log(sum(2)(3)(4)());
+```
+Which is equivalent to
+```javascript
+let sum = function(a) {
+    return function(b) {
+        if(typeof b === 'undefined') {
+            return a;
+        } else {
+            return sum(a + b);
+        }
+    }
+}
+```
