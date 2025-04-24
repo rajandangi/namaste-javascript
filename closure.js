@@ -4,11 +4,9 @@ function x() {
     function y() {
         console.log(a); // Although a is not available in the scope of y, it is available because of closure.
     }
-    return y;
+    y();
 }
-var x = x();
-console.log(x);
-// x();// function bundled with its lexical scope is called closure.
+x();// function bundled with its lexical scope is called closure.
 
 /**
  * Uses of Closures:

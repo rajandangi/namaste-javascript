@@ -1,17 +1,10 @@
-
-var b = 10;
-let a = 20;
-const c = 30;
-
+const a = 20; // Outer scope (Script)
 {
-    let a = 10;
-    var b = 20;
-    const c = 30;
-    const d = 40;
-    console.log('b', b); //20
-    console.log('a', a); //10
-    console.log('c', c); //30
+    const a = 30; // First block scope
+    console.log("Inside Block 1, a = ", a);
+    {
+        // No 'a' declared here!
+        console.log("Inside Block 2, a = ", a); // Which 'a' does this access?
+    }
 }
-
-console.log('b', b);// 20 // This called shadowing in javascript.
-console.log('a', a);// 20
+console.log("Outside Block, a = ", a);
